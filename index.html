@@ -1,0 +1,181 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head></html>
+
+<div class="container">
+
+	<div class="box">
+		<div class="content">
+			<h2>L.M.</h2>
+		    <a href="best.html" ><button class="btn">popular</button></a>
+			<h3>contact</h3>
+			<p>you can contact us in instagram.<br>download musics from here.<br>(click here)</p>
+			<a href="https://www.instagram.com/lucis.music/">Instagram</a>
+		    <a href="search.html" >download</a>
+		</div>
+	</div>
+</div>
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+.btn{
+position: relative;
+color:red;
+background:none;
+border-radius:2px;
+border-color:red;
+font-size:20px;
+top:1px;
+border:none;
+outline:none;
+cursor:pointer;
+}
+
+.btn:hover{
+border-color:red;
+
+}
+
+
+body
+{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: black;
+	font-family: 'Poppins', sans-serif;
+}
+
+
+
+.container
+{
+	position: relative;
+	width: 90%;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	grid-template-rows: auto;
+	grid-gap: 0 40px;
+}
+.container .box
+{
+	position: relative;
+	height: 400px;
+	background: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #000;
+}
+.container .box:before
+{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	background: black;
+	transform: skew(2deg,2deg);
+	z-index: -1;
+}
+.container .box:nth-child(1):before
+{
+	background: linear-gradient(315deg,#FF0000,#e64a19);
+}
+.container .box:nth-child(2):before
+{
+	background: linear-gradient(315deg,#8B0000,#8B0000)	
+}
+.container .box:nth-child(3):before
+{
+	background: linear-gradient(315deg,#FF0000,#5d02ff)
+}
+.container .box:nth-child(4):before
+{
+	background: linear-gradient(315deg,#FF0000,#ffc107)
+}
+.container .box:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255,255,255,0.05);
+	pointer-events: none;
+}
+.content
+{
+backgroud:black;
+	position: relative;
+	padding: 20px;
+	transform: translateY(60px);
+}
+.box .content h2
+{
+	position: absolute;
+	top: -80px;
+	right: 20px;
+	margin: 0;
+	padding: 0;
+	font-size: 4em;
+	color: red;
+	transition: 0.5s;
+}
+
+.box .content h3
+{
+top:-20px;
+position: relative;
+	margin: 0 0 10px;
+	padding: 0;
+	font-size: 24px;
+	font-weight: 500;
+	color: red;
+}
+.box .content p
+{
+top:-15px;
+position: relative;
+	margin: 0;
+	padding: 0;
+	color: red;
+	font-size: 16px;
+}
+.box .content a
+{
+top:-30px;
+	position: relative;
+	margin: 30px 0 0;
+	padding: 12.5px 22.5px;
+	text-decoration: none;
+	border: 1px solid red;
+	display: inline-block;
+	color: red;
+	transition: 0.5s;
+	transform: translateY(-40px);
+	opacity: 0;
+	visibility: hidden;
+}
+.box:hover .content a
+{
+	transform: translateY(0);
+	opacity: 1;
+	visibility: visible;
+}
+.box .content a:hover
+{
+	color: #000;
+	background: red;
+}
+
+
+
+
+</style>
